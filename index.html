@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <title>Psiquiatria del Alma</title>
@@ -15,8 +16,8 @@
     <!-- Comienzo Header -->
     <header class="menu-container">
         <a href="index.html"><img src="Imagenes/Logo/TEAM.png" alt="logoTeam" /></a>
-        <nav class="menu">
-            <ul>
+        <nav class="menu ml-0">
+            <ul class="nav nav-pills nav-fill">
                 <li><a href="#sobreMi">Sobre Mi</a></li>
                 <li><a href="#guiaDeRelajacion">Guia de relajacion</a></li>
                 <li><a href="#contacto">Contatco</a></li>
@@ -88,56 +89,87 @@
                 </div>
             </div>
         </section>
-        <section class="contactoconsultorio">
-            <div id="contacto">
-                <h3>Datos de Contacto</h3>
-                <ul class="datos">
-                    <li>+5491133226688</li>
-                    <li>tomas@gmail.com</li>
-                    <li>www.psiquiatriadelalma.com</li>
-                </ul>
+        <div class="container mt-0">
+            <div class="row">
+                <div class="col-4">
+                    <div id="contacto">
+                        <h3>Datos de Contacto</h3>
+                        <ul class="datos">
+                            <li>+5491133226688</li>
+                            <li>tomas@gmail.com</li>
+                            <li>www.psiquiatriadelalma.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div id="consultorio">
+                        <h3>Consultorio</h3>
+                        <p>Vicente Lopez 2300, Caba, Argentina</p>
+                        <iframe class="mapa"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.678787925203!2d-58.39855204981591!3d-34.58699336402329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca98cc8c04a9%3A0xa813453dc3058728!2sVicente%20L%C3%B3pez%202300%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1651372194739!5m2!1ses!2sar"
+                            width="" height="" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">E-mail</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Consulta</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </form>
+                    <div class="col-auto my-1">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+
             </div>
-            <div id="consultorio">
-                <h3>Consultorio</h3>
-                <p>Vicente Lopez 2300, Caba, Argentina</p>
-                <iframe class="mapa"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.678787925203!2d-58.39855204981591!3d-34.58699336402329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca98cc8c04a9%3A0xa813453dc3058728!2sVicente%20L%C3%B3pez%202300%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1651372194739!5m2!1ses!2sar"
-                    width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </section>
+        </div>
         <section>
             <div id="notas">
-                <h2>Articulos para el bienestar</h2>
-                <div class="grid-container">
-                    <div>
-                        <img src="Imagenes/Notas/cmocontrolarlaagresividad.jpg" alt="Autocontrol" class="autocontrol">
-                        <h4>¿Cómo controlar la agresividad?</h4>
-                        <p class="autocontrolparrafo">La agresividad es un estado de ánimo, una conducta, un sentimiento
-                            y
-                            un conjunto de patrones de carácter psicológico que desata actitudes compuestas de ira,
-                            odio,
-                            hostilidad, lenguaje vulgar (insultos), expresiones faciales marcadas por la rabia, cólera,
-                            tono
-                            de voz fuerte y con tendencia al maltrato, entre otros</p>
+                <h2 class="mt-0">Articulos para el bienestar</h2>
+                <div class="row row-cols-1 row-cols-md-3 g mt-0">
+                    <div class="col">
+                        <div class="card">
+                            <img src="Imagenes/Notas/cmocontrolarlaagresividad.jpg" alt="Autocontrol"
+                                class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">¿Cómo controlar la agresividad?</h5>
+                                <p class="card-text"> La agresividad es un estado de ánimo, una conducta, un sentimiento
+                                    y un conjunto de patrones de carácter psicológico que desata actitudes compuestas de
+                                    ira, odio, hostilidad, lenguaje vulgar (insultos), expresiones faciales marcadas por
+                                    la rabia, cólera, tono de voz fuerte y con tendencia al maltrato, entre otros. </p>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <img src="Imagenes/Notas/cmoliberarsedelaculpa.jpg" alt="Bienestar" class="autocontrol">
-                        <h4>¿Cómo liberarse de la culpa?</h4>
-                        <p class="autocontrolparrafo">La culpa es un sentimiento por el que todo el mundo pasa alguna
-                            vez.
-                            Generalmente la culpa es acompañada por una sensación de remordimiento que nos acompaña por
-                            un
-                            determinado tiempo. En esta columna hablaremos sobre la culpa y de cómo librarnos de ella.
-                        </p>
+                    <div class="col">
+                        <div class="card">
+                            <img src="Imagenes/Notas/cmoliberarsedelaculpa.jpg" alt="Bienestar" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">¿Cómo liberarse de la culpa?</h5>
+                                <p class="card-text">La culpa es un sentimiento por el que todo el mundo pasa alguna
+                                    vez. Generalmente la culpa es acompañada por una sensación de remordimiento que nos
+                                    acompaña por un determinado tiempo. En esta columna hablaremos sobre la culpa y de
+                                    cómo librarnos de ella. </p>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <img src="Imagenes/Notas/seperdonalainfidelidad.jpg" alt="Infidelidad" class="autocontrol">
-                        <h4>¿Se perdona la infidelidad?</h4>
-                        <p class="autocontrolparrafo">La infidelidad es un abuso de confianza, una falta de
-                            responsabilidad
-                            afectiva y el quiebre o rompimiento de un compromiso que se tiene con la otra persona (la
-                            pareja). Para saber más te invitamos a leer este artículo completo.</p>
+                    <div class="col">
+                        <div class="card">
+                            <img src="Imagenes/Notas/seperdonalainfidelidad.jpg" alt="Infidelidad" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">¿Se perdona la infidelidad?</h5>
+                                <p class="card-text"> La infidelidad es un abuso de confianza, una falta de
+                                    responsabilidad afectiva y el quiebre o rompimiento de un compromiso que se tiene
+                                    con la otra persona (la pareja). Para saber más te invitamos a leer este artículo
+                                    completo.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -145,7 +177,7 @@
         </section>
 
     </main>
-    <!-- Footer -->
+    <!-- Comienzo Footer -->
     <footer>
         <div>
             <ul>
@@ -171,9 +203,18 @@
                 </li>
             </ul>
         </div>
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white" href="www.psiquiatriadelalma.com">www.psiquiatriadelalma.com</a>
+        </div>
+        <!-- Copyright -->
     </footer>
     <!-- Fin de footer -->
-
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
