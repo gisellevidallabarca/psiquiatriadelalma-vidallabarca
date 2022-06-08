@@ -59,17 +59,12 @@ main {
 .fondo {
     background-image: url("Imagenes/Sobre mi/ImagenFondo.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     padding: 3% 30% 3% 20%;
 }
 
 h2 {
     padding: 3% 3% 1% 36%;
-}
-
-.videos {
-    display: flex;
-    justify-content: space-around;
 }
 
 h3 {
@@ -149,3 +144,16 @@ footer {
 .ml-0 {
     margin-left: 3% !important;
   }
+
+  .ml-1 {
+    margin-left: 5% !important;
+  }  
+
+
+  @media only screen and (max-width: 768px) {
+    /* Para celulares: */
+    .ml-1 {
+        margin-bottom: 3% !important;
+      } 
+  }
+
