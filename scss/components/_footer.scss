@@ -1,0 +1,19 @@
+@import "../base/variables";
+.Redes {
+    width: 10%;
+}
+
+footer {
+    div {
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            padding-top: nth($medidas, 5);//
+            padding-left:  nth($medidas, 6);
+            padding-bottom:  nth($medidas, 3);
+        }
+    }
+
+    background-color: #fcf7f4;
+}

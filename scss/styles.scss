@@ -1,0 +1,50 @@
+@import "https://fonts.googleapis.com/css2?family=Lobster&display=swap";
+@import "components/header";
+@import "components/main";
+@import "components/footer";
+@import "base/variables";
+
+
+/* Para celulares:*/
+* {
+    margin: $medidas,1;
+    padding: $medidas,1;
+}
+
+h2 {
+    padding: nth($medidas, 4) nth($medidas, 4) nth($medidas, 2) nth($medidas, 8);
+}
+
+h3 {
+    padding-bottom: nth($medidas, 5);
+}
+
+.datos {
+    padding-top: nth($medidas, 6);
+    line-height: 30px;
+}
+
+
+
+h4 {
+    padding: nth($medidas, 1) nth($medidas, 7) nth($medidas, 3) nth($medidas, 7);
+}
+
+
+.mt-0 {
+    margin-top: nth($medidas, 5) !important;
+}
+
+.ml-0 {
+    margin-left: nth($medidas, 4) !important;
+}
+
+.ml-1 {
+    margin-left: nth($medidas, 5) !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .ml-1 {
+        margin-bottom: nth($medidas, 4) !important;
+    }
+}

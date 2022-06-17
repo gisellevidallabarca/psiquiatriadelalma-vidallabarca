@@ -1,0 +1,27 @@
+@import "../base/variables";
+
+main {
+    background-color: #fcf7f4;
+    font-family: 'Lobster', cursive;
+
+    .fondo {
+        background-image: url("../Imagenes/Sobre_mi/ImagenFondo.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: nth($medidas, 4)  nth($medidas, 7)  nth($medidas, 4)  nth($medidas, 9);
+    }
+}
+
+.autocontrol {
+    
+    &:hover {
+    filter: opacity(.5);
+    transform: scale(1.1);
+    transition: all 2s;
+}
+}
+
+.mapa {
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,40 @@
+@import "../base/variables";
+
+.menu-container {
+    background-color: #fcf7f4;
+
+    img {
+        max-width: 15%;
+        margin-left: 40%;
+
+        &:hover {
+            transition: all 2s;
+            max-width: 16%;
+        }
+    }
+}
+
+nav {
+    ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 0% 3% 3% 6%;
+
+        li {
+
+            a {
+                text-decoration: none !important;
+                color: black;
+                font-family: 'Lobster', cursive;
+                font-size: 140%;
+                list-style-type: none;
+
+                &:hover {
+                    font-size: 150%;
+                    color: #a3c2c9;
+                    transition: all 2s;
+                }
+            }
+        }
+    }
+}
