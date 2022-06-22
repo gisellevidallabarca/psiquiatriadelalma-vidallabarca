@@ -1,4 +1,6 @@
+@import "../base/listas";
 @import "../base/variables";
+
 .Redes {
     width: 10%;
 }
@@ -15,5 +17,5 @@ footer {
         }
     }
 
-    background-color: #fcf7f4;
+    background-color: $color-principal;
 }

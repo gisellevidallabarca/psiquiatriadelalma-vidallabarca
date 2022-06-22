@@ -3,19 +3,24 @@
 @import "components/main";
 @import "components/footer";
 @import "base/variables";
+@import "base/listas";
+@import "base/mixins";
 
 
 /* Para celulares:*/
 * {
-    margin: $medidas,1;
-    padding: $medidas,1;
+    margin: $medidas, 1;
+    padding: $medidas, 1;
 }
 
 h2 {
-    padding: nth($medidas, 4) nth($medidas, 4) nth($medidas, 2) nth($medidas, 8);
+    @include padding-general(nth($medidas, 4) nth($medidas, 4) nth($medidas, 2) nth($medidas, 8));
 }
 
+
+
 h3 {
+
     padding-bottom: nth($medidas, 5);
 }
 
@@ -24,10 +29,8 @@ h3 {
     line-height: 30px;
 }
 
-
-
 h4 {
-    padding: nth($medidas, 1) nth($medidas, 7) nth($medidas, 3) nth($medidas, 7);
+    @include padding-general(nth($medidas, 1) nth($medidas, 7) nth($medidas, 3) nth($medidas, 7));
 }
 
 
@@ -36,11 +39,15 @@ h4 {
 }
 
 .ml-0 {
-    margin-left: nth($medidas, 4) !important;
+    @include margen-izquierdo(nth($medidas, 4));
 }
 
 .ml-1 {
-    margin-left: nth($medidas, 5) !important;
+    @include margen-izquierdo(nth($medidas, 5));
+}
+
+.ml-2 {
+    @include margen-izquierdo(nth($medidas, 2));
 }
 
 @media only screen and (max-width: 768px) {

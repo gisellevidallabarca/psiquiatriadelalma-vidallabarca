@@ -1,24 +1,30 @@
+@import "../base/listas";
 @import "../base/variables";
+@import "../base/mixins";
+@import "../base/extends";
 
 main {
-    background-color: #fcf7f4;
+    background-color: $color-principal;
     font-family: 'Lobster', cursive;
 
     .fondo {
         background-image: url("../Imagenes/Sobre_mi/ImagenFondo.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: nth($medidas, 4)  nth($medidas, 7)  nth($medidas, 4)  nth($medidas, 9);
+        @extend %imagen;
+        @include padding-general(nth($medidas, 6) nth($medidas, 7) nth($medidas, 6) nth($medidas, 9));
+
+        p {
+            font-size: 1.2rem;
+        }
     }
+
 }
 
 .autocontrol {
-    
     &:hover {
-    filter: opacity(.5);
-    transform: scale(1.1);
-    transition: all 2s;
-}
+        filter: opacity(.5);
+        transform: scale(1.1);
+        transition: all 2s;
+    }
 }
 
 .mapa {

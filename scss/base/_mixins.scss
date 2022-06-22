@@ -1,0 +1,7 @@
+@mixin margen-izquierdo($margen) {
+   margin-left: $margen !important;
+}
+
+@mixin padding-general($padding-general) {
+   padding: $padding-general;
+}

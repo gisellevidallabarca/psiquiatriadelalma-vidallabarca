@@ -1,85 +1,128 @@
 @import "https://fonts.googleapis.com/css2?family=Lobster&display=swap";
-.menu-container {
-  background-color: #fcf7f4; }
-  .menu-container img {
-    max-width: 15%;
-    margin-left: 40%; }
-    .menu-container img:hover {
-      transition: all 2s;
-      max-width: 16%; }
 
-nav ul {
-  display: flex;
-  justify-content: space-between;
-  padding: 0% 3% 3% 6%; }
-  nav ul li a {
-    text-decoration: none !important;
-    color: black;
-    font-family: 'Lobster', cursive;
-    font-size: 140%;
-    list-style-type: none; }
-    nav ul li a:hover {
-      font-size: 150%;
-      color: #a3c2c9;
-      transition: all 2s; }
+.menu-container {
+  background-color: #fcf7f4;
+}
+
+.menu-container img {
+  max-width: 30%;
+  margin-left: 10%;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #fcf7f4;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: black;
+  font-family: 'Lobster', cursive;
+  text-decoration: none;
+  font-size: 150%;
+}
+
+.navbar a:hover {
+  font-size: 170%;
+  color: #a3c2c9;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+main .fondo {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 main {
   background-color: #fcf7f4;
-  font-family: 'Lobster', cursive; }
-  main .fondo {
-    background-image: url("../Imagenes/Sobre_mi/ImagenFondo.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 3% 30% 3% 20%; }
+  font-family: 'Lobster', cursive;
+}
+
+main .fondo {
+  background-image: url("../Imagenes/Sobre_mi/ImagenFondo.jpg");
+  padding: 10% 30% 10% 20%;
+}
+
+main .fondo p {
+  font-size: 1.2rem;
+}
 
 .autocontrol:hover {
   filter: opacity(0.5);
   transform: scale(1.1);
-  transition: all 2s; }
+  transition: all 2s;
+}
 
 .mapa {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+}
 
 .Redes {
-  width: 10%; }
+  width: 10%;
+}
 
 footer {
-  background-color: #fcf7f4; }
-  footer div ul {
-    display: flex;
-    list-style-type: none;
-    padding-top: 5%;
-    padding-left: 10%;
-    padding-bottom: 2%; }
+  background-color: #fcf7f4;
+}
+
+footer div ul {
+  display: flex;
+  list-style-type: none;
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-bottom: 2%;
+}
 
 /* Para celulares:*/
 * {
   margin: 0%, 1%, 2%, 3%, 5%, 10%, 30%, 36%, 20%, 1;
-  padding: 0%, 1%, 2%, 3%, 5%, 10%, 30%, 36%, 20%, 1; }
+  padding: 0%, 1%, 2%, 3%, 5%, 10%, 30%, 36%, 20%, 1;
+}
 
 h2 {
-  padding: 3% 3% 1% 36%; }
+  padding: 3% 3% 1% 36%;
+}
 
 h3 {
-  padding-bottom: 5%; }
+  padding-bottom: 5%;
+}
 
 .datos {
   padding-top: 10%;
-  line-height: 30px; }
+  line-height: 30px;
+}
 
 h4 {
-  padding: 0% 30% 2% 30%; }
+  padding: 0% 30% 2% 30%;
+}
 
 .mt-0 {
-  margin-top: 5% !important; }
+  margin-top: 5% !important;
+}
 
 .ml-0 {
-  margin-left: 3% !important; }
+  margin-left: 3% !important;
+}
 
 .ml-1 {
-  margin-left: 5% !important; }
+  margin-left: 5% !important;
+}
+
+.ml-2 {
+  margin-left: 1% !important;
+}
 
 @media only screen and (max-width: 768px) {
   .ml-1 {
-    margin-bottom: 3% !important; } }
+    margin-bottom: 3% !important;
+  }
+}
