@@ -7,15 +7,21 @@
 
 footer {
     div {
-
         ul {
             display: flex;
             list-style-type: none;
-            padding-top: nth($medidas, 5);//
-            padding-left:  nth($medidas, 6);
-            padding-bottom:  nth($medidas, 3);
+            padding-top: nth($medidas, 5); //
+            padding-left: nth($medidas, 6);
+            padding-bottom: nth($medidas, 3);
         }
     }
 
     background-color: $color-principal;
+}
+
+@media (max-width: 1268px) {
+    .Redes {
+      display: flex;
+      width: 30%;
+    }
 }

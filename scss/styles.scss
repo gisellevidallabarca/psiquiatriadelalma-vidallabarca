@@ -13,10 +13,13 @@
     padding: $medidas, 1;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 h2 {
     @include padding-general(nth($medidas, 4) nth($medidas, 4) nth($medidas, 2) nth($medidas, 8));
 }
-
 
 
 h3 {

@@ -14,6 +14,7 @@
         content="bienestar, alma, espiritual, yoga, meditacion, consciencia, desarrollo personal, crecimiento">
     <meta name="copy" content="Tomas Enrique Aguilar Maya">
     <meta name="author" content="Giselle Vidal Labarca">
+
     <!--Open graph-->
     <meta property="og:title" content="Psiquiatria del Alma">
     <meta property="og:description"
@@ -28,18 +29,25 @@
 </head>
 
 <body>
-    <!-- Comienzo Header -->
-    <header class="menu-container sticky-top">
-        <div class="navbar">
+    <!-- Comienzo Header-->
+    <header class="top-nav">
+        <div class="logo-header">
             <a href="index.html"><img src="Imagenes/Logo/TEAM-1.svg" alt="logoTeam" /></a>
-            <a href="#sobreMi">Sobre Mi</a>
-            <a href="#guiaDeRelajacion">Guia de relajacion</a>
-            <a href="#contacto">Contacto</a>
-            <a href="#consultorio">Consultorio</a>
-            <a href="#notas">Articulos para el bienestar</a>
         </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="menu">
+            <li><a href="#sobreMi">Sobre Mi</a></li>
+            <li><a href="#guiaDeRelajacion">Guia de relajacion</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#consultorio">Consultorio</a></li>
+            <li><a href="#notas">Articulos para el bienestar</a></li>
+        </ul>
     </header>
     <!-- Fin Header -->
+
     <main>
         <section>
             <div id="sobreMi" class="fondo">
@@ -160,10 +168,9 @@
                     </div>
                 </div>
             </div>
-
         </section>
-
     </main>
+
     <!-- Comienzo Footer -->
     <footer>
         <div>
@@ -199,7 +206,8 @@
     </footer>
     <!-- Fin de footer -->
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
     </script>
 </body>
 

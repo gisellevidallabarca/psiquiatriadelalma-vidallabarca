@@ -6,7 +6,7 @@
 main {
     background-color: $color-principal;
     font-family: 'Lobster', cursive;
-
+    
     .fondo {
         background-image: url("../Imagenes/Sobre_mi/ImagenFondo.jpg");
         @extend %imagen;
@@ -22,7 +22,7 @@ main {
 .autocontrol {
     &:hover {
         filter: opacity(.5);
-        transform: scale(1.1);
+        transform: scale(1.08);
         transition: all 2s;
     }
 }
